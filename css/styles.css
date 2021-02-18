@@ -503,17 +503,23 @@ nav{
     justify-content: center;
 }
 
-.selection .text{
+.selection-item{
+    margin-right: 8px;
+}
+
+.selection-item .text{
+    display: block;
     padding: 6px 22px;
-    color: var(--secondary-color);
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     border-radius: 4px;
-    margin-right: 8px;
     background-color: var(--section-color);
     transition: color 250ms var(--main-animation) , background-color 250ms var(--main-animation);
     cursor: pointer; 
+    color: var(--secondary-color);
+
 }
 
 .portfolio .card{
@@ -531,8 +537,8 @@ nav{
     margin-right: 0px;
 }
 
-.selection .text:hover,
-.selection .text:focus{
+.selection-item .text:hover,
+.selection-item .text:focus{
     background-color: var(--active-color);
     color: var(--hero-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
