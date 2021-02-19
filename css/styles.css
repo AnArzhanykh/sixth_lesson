@@ -631,7 +631,6 @@ nav{
 .invate .social {
     margin-right: 10px;
     border-radius: 50%;
-    transition: border-radius 250ms var(--main-animation), background-color 250ms var(--main-animation);
 
 }
 
@@ -649,6 +648,7 @@ nav{
 .invate .icon{
     color: var(--hero-color);
     background-color: rgba(255, 255, 255, 0.1);
+    transition: border-radius 250ms var(--main-animation), background-color 250ms var(--main-animation);
 }
 
 .subscribe input{
@@ -669,7 +669,6 @@ nav{
     font-size: 16px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
-   
 }
 
 .footer .button-send{
@@ -855,11 +854,12 @@ nav{
     width: 16px;
     height: 15px;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid var(--secondary-color);;
     border-radius: 3px;
     transition: background-color 250ms var(--main-animation), 
     color 250ms var(--main-animation), 
-    background-image 250ms var(--main-animation);
+    background-image 250ms var(--main-animation),
+    border 250ms var(--main-animation);
 }
 
 .checkbox:checked + .icon-checkbox{
@@ -871,7 +871,9 @@ nav{
     background-image: url('../images/icon_check.svg');
 }
 
-
+.checkbox:focus + .icon-checkbox{
+    border: 2px solid var(--active-color);
+}
 
 .modal .button{
     padding-left: 55px;
