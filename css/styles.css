@@ -894,10 +894,10 @@ nav{
     top: 8px;
     right: 8px;
     padding: 0px;
-
+    margin: 0;
+    box-sizing: padding-box;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
     background-color: var(--hero-color);
     cursor: pointer;
 
